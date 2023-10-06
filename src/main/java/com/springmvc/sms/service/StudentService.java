@@ -1,4 +1,4 @@
 package com.springmvc.sms.service;
 
-public class StudentService {
+public interface StudentService {
 }
