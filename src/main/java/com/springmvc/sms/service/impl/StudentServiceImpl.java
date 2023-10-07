@@ -10,6 +10,7 @@ import java.util.List;
 public class StudentServiceImpl implements StudentService {
     private final StudentRepository studentRepository;
     public StudentServiceImpl(StudentRepository studentRepository) {
+        super();
         this.studentRepository = studentRepository;
     }
     @Override
@@ -20,5 +21,20 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public Student saveStudent(Student student) {
         return studentRepository.save(student);
+    }
+
+    @Override
+    public Student findStudentByID(Long id) {
+        return studentRepository.findById(id).get();
+    }
+
+    @Override
+    public Student updateStudent(Student student) {
+        return studentRepository.save(student);
+    }
+
+    @Override
+    public void deleteStudent(Long id) {
+        studentRepository.deleteById(id);
     }
 }

@@ -15,37 +15,31 @@
                 <form th:action="@{/students}" th:object="${student}" th:method="POST">
                     <div class="form-group">
                         <label>First Name</label>
-                        <label>
-                            <input
-                                    type="text"
-                                    name="firstName"
-                                    th:field="*{firstName}"
-                                    class="form-control"
-                                    placeholder="Enter First Name"
-                            />
-                        </label>
+                        <input
+                                type="text"
+                                name="firstName"
+                                th:field="*{firstName}"
+                                class="form-control"
+                                placeholder="Enter First Name"
+                        />
 
                         <label>Last Name</label>
-                        <label>
-                            <input
-                                    type="text"
-                                    name="lastName"
-                                    th:field="*{lastName}"
-                                    class="form-control"
-                                    placeholder="Enter Last Name"
-                            />
-                        </label>
+                        <input
+                                type="text"
+                                name="lastName"
+                                th:field="*{lastName}"
+                                class="form-control"
+                                placeholder="Enter Last Name"
+                        />
 
                         <label>Email</label>
-                        <label>
-                            <input
-                                    type="text"
-                                    name="email"
-                                    th:field="*{email}"
-                                    class="form-control"
-                                    placeholder="Enter Email"
-                            />
-                        </label>
+                        <input
+                                type="text"
+                                name="email"
+                                th:field="*{email}"
+                                class="form-control"
+                                placeholder="Enter Email"
+                        />
 
                         <div class="card-footer">
                             <button type="submit" class="btn btn-primary">
