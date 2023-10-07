@@ -23,13 +23,13 @@ public class SimpleStudentManagementSystemUsingSpringMvcApplication implements C
     //Ham run se chay ngay sau khi chuong trinh bat dau truoc khi thuc hien cac tac vu khac
     @Override
     public void run(String... args) throws Exception {
-        Student student1 = new Student("Cuong", "Nguyen", "cuongnguyen@gmail.com");
-        studentRepository.save(student1);
-
-        Student student2 = new Student("Hoa", "Pham", "hoapham@gmail.com");
-        studentRepository.save(student2);
-
-        Student student3 = new Student("Linh", "Trinh", "linhtrinh@gmail.com");
-        studentRepository.save(student3);
+//        Student student1 = new Student("Cuong", "Nguyen", "cuongnguyen@gmail.com");
+//        studentRepository.save(student1);
+//
+//        Student student2 = new Student("Hoa", "Pham", "hoapham@gmail.com");
+//        studentRepository.save(student2);
+//
+//        Student student3 = new Student("Linh", "Trinh", "linhtrinh@gmail.com");
+//        studentRepository.save(student3);
     }
 }
